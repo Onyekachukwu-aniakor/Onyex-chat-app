@@ -18,7 +18,7 @@ export const styles = StyleSheet.create({
     subheading: { fontSize: 14, color: Colors.onSurfaceVariant, marginBottom: 32, lineHeight: 20 },
     form: { gap: 16 },
     field: { gap: 6 },
-    fieldLabel: { fontSize: 11, fontWeight: "500", color: Colors.onSurfaceVariant, letterSpacing: 0.2 },
+    fieldLabel: { fontSize: 13, fontWeight: "500", color: Colors.onSurfaceVariant, letterSpacing: 0.2 },
     input: {
         backgroundColor: Colors.surfaceLow,
         borderRadius: 14,
