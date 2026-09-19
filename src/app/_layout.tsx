@@ -1,5 +1,6 @@
 import { Redirect, Stack } from "expo-router";
 import { StatusBar } from "expo-status-bar";
+import '../global.css'
 import {GestureHandlerRootView} from 'react-native-gesture-handler'
 //import * as SplashScreen  from "expo-splash-screen";
 
@@ -7,7 +8,7 @@ import {GestureHandlerRootView} from 'react-native-gesture-handler'
 /* Makes the native splash screen (configured in app.json) remain visible until hideAsync is called.Important note: It is recommended to call this in global scope without awaiting, rather than inside React components or hooks, because otherwise this might be called too late, when the splash screen is already hidden. */
 
 function AuthGuard(){
-const {isSignedIn} = {isSignedIn : false}
+const {isSignedIn} = {isSignedIn : true}
 
 if(!isSignedIn){
   return <Redirect href='/(auth)'/>

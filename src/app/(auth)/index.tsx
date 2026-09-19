@@ -1,6 +1,6 @@
 import {  KeyboardAvoidingView, Platform, ScrollView, Text, View, TextInput, Pressable, TouchableOpacity, ActivityIndicator } from 'react-native'
 import React, { useState } from 'react'
-import { useRoute } from 'expo-router'
+import { useRouter } from 'expo-router'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { styles } from '@/assets/styles/AuthScreen.styles'
 import {LinearGradient} from 'expo-linear-gradient'
@@ -13,7 +13,7 @@ import {Ionicons} from '@react-native-vector-icons/ionicons'
 type Mode = 'login' | 'register'
 
 export default function AuthScreen() {
-    const [mode, setMode] = useState<Mode>('login')
+    const [mode, setMode] = useState<Mode>('register')
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
@@ -21,7 +21,7 @@ export default function AuthScreen() {
     const [verificationCode, setVerificationCode]= useState('')
     const [loading, setLoading]= useState(false)
     const [verifying, setVerifying]= useState(false)
-    const router = useRoute()
+    const router = useRouter()
     const svgMarkup = `<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="35.003" cy="35.005" r="14.001" fill="#fff"/><path d="M35.906.012A34.84 34.84 0 0 1 56.85 7.655c-4.245 2.367-7.243 6.7-7.765 11.766A20.93 20.93 0 0 0 35.003 14C23.403 14 14 23.403 14 35.003s9.404 21.003 21.003 21.003 21.003-9.404 21.003-21.003q-.001-.594-.034-1.18a15.2 15.2 0 0 0 8.306 2.455c2.025 0 3.957-.396 5.725-1.111l-.009.74c-.48 18.913-15.962 34.099-34.991 34.099l-.903-.012C15.486 69.523.483 54.52.012 35.906L0 35.003C0 15.67 15.671 0 35.003 0z" fill="#fff"/></svg>`
 
 
