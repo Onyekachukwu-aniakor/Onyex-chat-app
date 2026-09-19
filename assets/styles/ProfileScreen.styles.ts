@@ -47,7 +47,7 @@ export const styles = StyleSheet.create({
     },
     form: { paddingHorizontal: 20, gap: 16 },
     field: { gap: 6 },
-    fieldLabel: { fontSize: 10, fontWeight: "800", letterSpacing: 1, color: Colors.onSurfaceVariant, opacity: 0.6 },
+    fieldLabel: { fontSize: 16, fontWeight: "800", letterSpacing: 1, color: Colors.onSurfaceVariant, opacity: 0.6 },
     input: {
         backgroundColor: Colors.surfaceHigh,
         borderRadius: 14,

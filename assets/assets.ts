@@ -544,10 +544,10 @@ export const dummyUsers = [
 
 export const dummyUserProfile = {
     _id: "current_user",
-    name: "GreatStack",
+    name: "Aniakor",
     email: "greatstack@example.com",
     handle: "greatstack",
-    avatar: "https://yt3.ggpht.com/SxtxAT2eoNsERZyC-2Q9t3YhFC0IPhlaYOFA8rciY3BkhfoR9VPAx5n8A8L6QNG3vjFXSsB7rQ=s240-c-k-c0x00ffffff-no-rj",
+    avatar: "https://unsplash-assets.imgix.net/unsplashplus/bento_img-crop.png?w=336&dpr=2&q=80&auto=format&fit=crop",
     bio: "Hey there! I am using InstaChat.",
     isOnline: true,
     lastSeen: "2026-06-02T07:52:28.905Z",
